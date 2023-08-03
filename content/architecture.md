@@ -1,11 +1,11 @@
 +++
 title = "Network architecture"
 weight = 5
-template = "with_figure.html"
 [extra]
 align = "justify"
-figure_path = "architecture.svg"
 +++
+
+{{ side_figure(path="figures/architecture.svg") }}
 
 
 The architecture consists of two modules, named Genesis network and Modulation network.

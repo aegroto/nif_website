@@ -19,10 +19,27 @@ body {
     text-align: center;
 }
 
+.figure {
+  text-align: center;
+}
+
+.figure > img {
+  margin: auto;
+}
+
+.side-figure {
+  display: inline;
+  text-align: left;
+}
+
+.side-figure + p {
+  display: inline;
+}
+
 .content {
     margin-top: 1em;
-    margin-right: 20em;
-    margin-left: 20em;
+    margin-right: 25%;
+    margin-left: 25%;
 }
 
 hr {
@@ -163,7 +180,7 @@ summary {
 /* general */
 body {
   color: #333;
-  font-size: 16px;
+  font-size: 13px;
   font-family: system-ui, sans-serif;
   line-height: 1.5;
   font-weight: 300;
