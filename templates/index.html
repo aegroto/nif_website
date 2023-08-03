@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>{{ section.title }}</title>
+      <link rel="stylesheet" href="{{ get_url(path="style.css", trailing_slash=false) }}">
+    </head>
+    <body>
+        <div class="content">
+            {% for page_data in section.pages %}
+                <h1>
+                    {{ page_data.title }}
+                </h1>
+                <div class = "section-content align-{{ page_data.extra.align }}">
+                    {{ page_data.content | safe }}
+                </div>
+            {% endfor %}
+        </div>
+    </body>
+</html>
