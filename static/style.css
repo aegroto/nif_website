@@ -9,6 +9,7 @@ html {
 body {
   /* remove margin in all browsers */
   margin: 0;
+  font-size: 22px;
 }
 
 .align-justify {
@@ -28,12 +29,14 @@ body {
 }
 
 .side-figure {
-  display: inline;
+  display: flex;
+  float: right;
   text-align: left;
 }
 
-.side-figure + p {
-  display: inline;
+.side-paragraph {
+  display: flex;
+  float: left;
 }
 
 .content {
@@ -41,6 +44,27 @@ body {
     margin-right: 25%;
     margin-left: 25%;
 }
+
+
+.section-content {
+  overflow: auto;
+}
+
+h1 {
+  font-size: 100%;
+}
+
+h2 {
+  font-size: 85%;
+}
+
+p {
+  font-size: 80%;
+  line-height: 1.5;
+  letter-spacing: -0.05px;
+}
+
+
 
 hr {
   /* fix height in Firefox */
@@ -180,7 +204,6 @@ summary {
 /* general */
 body {
   color: #333;
-  font-size: 13px;
   font-family: system-ui, sans-serif;
   line-height: 1.5;
   font-weight: 300;
@@ -211,12 +234,6 @@ a {
 
 a:hover {
   text-decoration: underline;
-}
-
-p {
-  font-size: 17px;
-  line-height: 1.7;
-  letter-spacing: -0.05px;
 }
 
 ul,

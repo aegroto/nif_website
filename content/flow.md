@@ -1,6 +1,6 @@
 +++
 title = "Training process"
-weight = 4
+weight = 5
 [extra]
 align = "justify"
 +++

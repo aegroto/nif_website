@@ -7,11 +7,13 @@
     <body>
         <div class="content">
             {% for page_data in section.pages %}
-                <h1>
-                    {{ page_data.title }}
-                </h1>
-                <div class = "section-content align-{{ page_data.extra.align }}">
-                    {{ page_data.content | safe }}
+                <div class="section-content">
+                    <h1>
+                        {{ page_data.title }}
+                    </h1>
+                    <div class = "align-{{ page_data.extra.align }}">
+                        {{ page_data.content | safe }}
+                    </div>
                 </div>
             {% endfor %}
         </div>
