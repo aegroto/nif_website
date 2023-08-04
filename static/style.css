@@ -64,7 +64,23 @@ p {
   letter-spacing: -0.05px;
 }
 
+.vc-container {
+  display: inline-block;
+  width: 32%;
+}
 
+.vc-full > img {
+  margin: auto;
+}
+
+.vc-container > p {
+  margin: auto;
+}
+
+.vc-slider {
+  margin: auto;
+  padding: auto;
+}
 
 hr {
   /* fix height in Firefox */

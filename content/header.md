@@ -16,3 +16,5 @@ University of Catania
 [**Paper**](https://tba.com/) -
 [**Code**](https://github.com/aegroto/nif) -
 [**Results**](https://tba.com/)
+
+{{ vc(img_id="kodak_1") }}
