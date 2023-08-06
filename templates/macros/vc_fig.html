@@ -1,7 +1,12 @@
 {% macro vc_fig(img_id, codec_id, name) %}
     <div class="vc-container">
-        <div class="vc-full">
-            <img src="visual_comparisons/{{img_id}}/full/{{codec_id}}.png">
+        <div class="vc-images">
+            <div class="vc-full">
+                <img loading="lazy" src="visual_comparisons/{{img_id}}/full/{{codec_id}}.png">
+            </div>
+            <div class="vc-crop">
+                <img loading="lazy" src="visual_comparisons/{{img_id}}/crop/{{codec_id}}.png">
+            </div>
         </div>
         <p>{{name}}</p>
     </div>

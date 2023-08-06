@@ -69,8 +69,23 @@ p {
   width: 32%;
 }
 
-.vc-full > img {
+.vc-images {
+  position: relative;
+}
+
+.vc-full {
+  position: relative;
+}
+
+.vc-crop {
+  position: absolute;
   margin: auto;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  width: 25%;
+  border-top: solid 1px white;
+  border-left: solid 1px white;
 }
 
 .vc-container > p {
@@ -80,6 +95,12 @@ p {
 .vc-slider {
   margin: auto;
   padding: auto;
+}
+
+.vc-full > img, 
+.vc-crop > img 
+{
+  margin: auto;
 }
 
 hr {
