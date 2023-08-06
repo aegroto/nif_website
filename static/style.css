@@ -9,7 +9,7 @@ html {
 body {
   /* remove margin in all browsers */
   margin: 0;
-  font-size: 22px;
+  font-size: 1.3vw;
 }
 
 .align-justify {
@@ -48,6 +48,9 @@ body {
 
 .section-content {
   overflow: auto;
+  padding: 0.3vw;
+  margin-bottom: 0.6vw;
+  background: rgb(250, 250, 250);
 }
 
 h1 {
@@ -83,18 +86,17 @@ p {
   bottom: 0;
   right: 0;
   z-index: 1;
-  width: 25%;
   border-top: solid 1px white;
   border-left: solid 1px white;
 }
 
-.vc-container > p {
+.vc-caption {
   margin: auto;
+  font-size: 80%;
 }
 
 .vc-slider {
   margin: auto;
-  padding: auto;
 }
 
 .vc-full > img, 

@@ -1,10 +1,9 @@
 {% import "macros/vc_fig.html" as vc_fig %}
 
 {% macro vc(img_id) %}
-    {{ vc_fig::vc_fig(img_id=img_id, codec_id="ground_truth", name="Ground Truth") }}
-    {{ vc_fig::vc_fig(img_id=img_id, codec_id="nif", name="NIF") }}
-    {{ vc_fig::vc_fig(img_id=img_id, codec_id="jpeg", name="JPEG") }}
-    {{ vc_fig::vc_fig(img_id=img_id, codec_id="bpg", name="BPG") }}
-    {{ vc_fig::vc_fig(img_id=img_id, codec_id="webp", name="WebP") }}
-    {{ vc_fig::vc_fig(img_id=img_id, codec_id="strumpler", name="Strumpler") }}
+    {% set data = load_data(path="content/visual_comparison/" ~ img_id ~ ".yaml") %}
+    
+    {% for img_data in data %}
+        {{ vc_fig::vc_fig(img_id=img_id, data=img_data) }}
+    {% endfor %}
 {% endmacro vc %}
