@@ -9,7 +9,7 @@ html {
 body {
   /* remove margin in all browsers */
   margin: 0;
-  font-size: 1.3vw;
+  font-size: 1.35vw;
 }
 
 .align-justify {
@@ -22,10 +22,12 @@ body {
 
 .figure {
   text-align: center;
+  width: 100%;
 }
 
 .figure > img {
   margin: auto;
+  width: 100%;
 }
 
 .side-figure {
@@ -41,15 +43,37 @@ body {
 
 .content {
     margin-top: 0.3vw;
-    margin-right: 25%;
-    margin-left: 25%;
+    margin-right: 23%;
+    margin-left: 23%;
 }
 
+.speed-table {
+  text-align: center;
+}
+
+.speed-table>table {
+  margin: auto;
+}
+
+th {
+  font-weight: 400;
+}
+
+td>strong {
+  font-weight: 500;
+}
+
+th, td {
+  border: solid 1px black;
+  padding: 0.2em;
+}
 
 .section-content {
   overflow: auto;
   border-radius: 1vw;
   padding: 0.3vw;
+  padding-right: 1em;
+  padding-left: 1em;
   margin-bottom: 0.6vw;
   background: rgb(250, 250, 250);
 }

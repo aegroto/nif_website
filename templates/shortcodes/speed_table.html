@@ -1,0 +1,19 @@
+{% set data = load_data(path="content/speed_comparison/" ~ case_id ~ ".yaml") %}
+<div class="speed-table">
+    <table>
+        <tr>
+            <th>Method</th>
+            <th>Time (min:sec)</th>
+            <th>PSNR (dB)</th>
+            <th>SSIM</th>
+        </tr>
+        {% for item in data %}
+            <tr>
+                <td>{{item["name"] | markdown(inline=true) | safe }}</td>
+                <td>{{item["time"] | markdown(inline=true) | safe }}</td>
+                <td>{{item["psnr"] | markdown(inline=true) | safe }}</td>
+                <td>{{item["ssim"] | markdown(inline=true) | safe }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</div>

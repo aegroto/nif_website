@@ -1,0 +1,13 @@
+- name: COIN
+  time: "16:04"
+  psnr: "22.53dB"
+  ssim: "0.475"
+- name: Strumpler
+  time: "24:15"
+  psnr: "46.73dB"
+  ssim: "0.993"
+- name: NIF (Ours)
+  time: "**2:27**"
+  psnr: "**47.53dB**"
+  ssim: "**0.997**"
+

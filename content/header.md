@@ -13,7 +13,7 @@ Lorenzo Catania, Dario Allegra
 University of Catania
 ***
 
-[**Paper**](https://tba.com/)-
+[**Paper**](https://tba.com/) -
 [**Code**](https://github.com/aegroto/nif) -
 [**Results**](https://tba.com/)
 
