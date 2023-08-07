@@ -119,6 +119,7 @@ p {
   bottom: 0;
   right: 0;
   z-index: 1;
+  width: 35%;
   border-top: solid 1px white;
   border-left: solid 1px white;
 }
