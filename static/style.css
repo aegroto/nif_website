@@ -49,6 +49,7 @@ body {
 
 .speed-table {
   text-align: center;
+  font-size: 80%;
 }
 
 .speed-table>table {
@@ -80,10 +81,17 @@ th, td {
 
 h1 {
   font-size: 100%;
+  font-weight: 500;
 }
 
 h2 {
-  font-size: 85%;
+  font-size: 95%;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 90%;
+  font-weight: 300;
 }
 
 p {
@@ -276,7 +284,6 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 300;
   text-align: center;
 }
 
