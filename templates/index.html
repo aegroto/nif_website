@@ -7,7 +7,7 @@
     <body>
         <div class="content">
             {% for page_data in section.pages %}
-                <div class="section-content">
+                <div id="page-{{page_data.slug}}" class="section-content">
                     <h1>
                         {{ page_data.title }}
                     </h1>

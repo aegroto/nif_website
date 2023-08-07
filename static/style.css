@@ -152,6 +152,11 @@ p {
   border: none;
 }
 
+#page-header>h1 {
+  font-size: 130%;
+  color: rgb(80, 80, 80);
+}
+
 hr {
   /* fix height in Firefox */
   height: 0;
