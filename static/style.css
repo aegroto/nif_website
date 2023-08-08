@@ -100,9 +100,14 @@ p {
   letter-spacing: -0.05px;
 }
 
+.vc-slider {
+  text-align: center;
+}
+
 .vc-kodak-container {
   display: inline-block;
   width: 32%;
+  text-align: center;
 }
 
 .vc-kodak-images {

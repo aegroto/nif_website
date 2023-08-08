@@ -1,0 +1,34 @@
+- id: ground_truth
+  name: "Ground Truth"
+  image_name: "Kodak #8"
+  resolution: "768x512"
+- id: nif
+  name: NIF (Ours)
+  metrics:
+    bpp: "0.28"
+    psnr: "22.12"
+    ms_ssim: "0.89"
+- id: strumpler
+  name: Strumpler
+  metrics:
+    bpp: "0.29"
+    psnr: "22.18"
+    ms_ssim: "0.88"
+- id: jpeg
+  name: JPEG
+  metrics:
+    bpp: "0.27"
+    psnr: "21.33"
+    ms_ssim: "0.88"
+- id: webp 
+  name: WebP
+  metrics:
+    bpp: "0.27"
+    psnr: "24.20"
+    ms_ssim: "0.93"
+- id: bpg
+  name: BPG
+  metrics:
+    bpp: "0.28"
+    psnr: "25.43"
+    ms_ssim: "0.94"

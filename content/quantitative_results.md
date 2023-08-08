@@ -25,9 +25,18 @@ Although WebP is able to capture some finer details it suffers from evident bloc
 ### *Kodak*
 On this dataset, our proposal NIF clearly outperforms JPEG and performs comparably to modern codecs, such as BPG and WebP, in terms of PSNR at low bitrates.
 In terms of MS-SSIM, NIF performs similarly to JPEG2000. 
-These results clearly reduce the gap between INR-based compression and classical methods with respect to the previous baseline given by the basic version of Strumpler et al., which is reported in the plot for reference. 
 
 {{ figure(path="plots/traditional_kodak.svg") }}
+
+These results clearly reduce the gap between INR-based compression and classical methods with respect to the previous baseline given by the basic version of Strumpler et al., which is reported in the plot for reference. 
+
+{% vc_slider() %}
+{{ vc(img_id="kodak_8", kind="kodak") }}
+{% end %}
+
+*Although state-of-the-art methods, such as BPG and Xie et al. approach, achieve asmoother reconstruction, it is noticeable that they tend to remove a lot of small details, reconstructing some patches as uniform colour blocks. 
+This is clear on the Kodak picture #8.
+In contrast, both NIF and Strumpler basic reconstruct this grainy structure, but NIF better encodes uniform patches.*
 
 ### *Image Compression Benchmark (ICB)*
 
