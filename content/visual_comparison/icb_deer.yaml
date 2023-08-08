@@ -1,0 +1,33 @@
+- id: ground_truth
+  name: "Ground Truth"
+  image_name: "ICB deer"
+  resolution: "Crop of 4043x2641"
+  crop_only: true
+- id: nif
+  name: NIF (Ours)
+  metrics:
+    bpp: "0.05"
+    psnr: "29.08"
+    ms_ssim: "0.85"
+  crop_only: true
+- id: bpg 
+  name: BPG
+  metrics:
+    bpp: "0.05"
+    psnr: "29.36"
+    ms_ssim: "0.86"
+  crop_only: true
+- id: webp 
+  name: WebP
+  metrics:
+    bpp: "0.05"
+    psnr: "28.66"
+    ms_ssim: "0.85"
+  crop_only: true
+- id: jpeg
+  name: JPEG
+  metrics:
+    bpp: "0.07"
+    psnr: "28.01"
+    ms_ssim: "0.81"
+  crop_only: true

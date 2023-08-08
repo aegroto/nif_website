@@ -185,6 +185,39 @@ p {
   width: 100%
 }
 
+.vc-icb-container {
+  display: inline-block;
+  width: 19%;
+}
+
+.vc-icb-images {
+  position: relative;
+}
+
+.vc-icb-full {
+  position: relative;
+}
+
+.vc-icb-crop {
+  position: relative;
+}
+
+.vc-icb-caption {
+  text-align: center;
+  margin: auto;
+  font-size: 75%;
+  overflow-wrap: break-word;
+}
+
+.vc-icb-slider {
+  margin: auto;
+}
+
+.vc-icb-crop > img {
+  margin: auto;
+  width: 100%
+}
+
 .citation-container {
   width: 80%;
   margin: auto;

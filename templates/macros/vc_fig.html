@@ -1,19 +1,25 @@
 {% macro vc_fig(img_id, kind, data) %}
     <div class="vc-{{kind}}-container">
         <div class="vc-{{kind}}-images">
-            <div class="vc-{{kind}}-full">
-                <img loading="lazy" src="visual_comparisons/{{img_id}}/full/{{data['id']}}.png">
-            </div>
-            <div class="vc-{{kind}}-crop">
-                <img loading="lazy" src="visual_comparisons/{{img_id}}/crop/{{data['id']}}.png">
-            </div>
+            {% if data["crop_only"] %}
+                <div class="vc-{{kind}}-crop">
+                    <img loading="lazy" src="visual_comparisons/{{img_id}}/crop/{{data['id']}}.png">
+                </div>
+            {% else %}
+                <div class="vc-{{kind}}-full">
+                    <img loading="lazy" src="visual_comparisons/{{img_id}}/full/{{data['id']}}.png">
+                </div>
+                <div class="vc-{{kind}}-crop">
+                    <img loading="lazy" src="visual_comparisons/{{img_id}}/crop/{{data['id']}}.png">
+                </div>
+            {% endif%}
         </div>
         {% if data["metrics"] %}
             <p class="vc-{{kind}}-caption">{{data["name"]}}, {{data["metrics"]["bpp"]}}bpp</p>
-            <p class="vc-{{kind}}-caption">PSNR: {{data["metrics"]["psnr"]}}dB, MS-SSIM: {{data["metrics"]["ms_ssim"]}}</p>
+            <p class="vc-{{kind}}-caption"><nobr>PSNR: {{data["metrics"]["psnr"]}}dB,</nobr> <nobr>MS-SSIM: {{data["metrics"]["ms_ssim"]}}</nobr></p>
         {% else %}
             <p class="vc-{{kind}}-caption">{{data["name"]}}</p>
-            <p class="vc-{{kind}}-caption">{{data["image_name"]}}, {{data["resolution"]}}</p>
+            <p class="vc-{{kind}}-caption"><nobr>{{data["image_name"]}}</nobr>, <nobr>{{data["resolution"]}}</nobr></p>
         {% endif%}
     </div>
 {% endmacro vc_fig %}
