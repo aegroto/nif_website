@@ -12,11 +12,11 @@ Our proposal NIF outperforms previous works on the field in terms of PSNR on Kod
 
 It is fair to point out that Strumpler et al. approach achieves comparable or better PSNR when using meta-learned initializations on CelebA; this is not surprising since the base parameters are learned on the same CelebA dataset, which is characterized by a limited images variability, and therefore allows the network to leverage the consistent redundancies that are typically absent in real scenarios.
 
-***
 {% vc_slider() %}
 {{ vc(img_id="celeba_189985", kind="celeba") }}
 {% end %}
 
+***
 *In this CelebA picture, NIF reconstruction is notably less noisy than Strumpler's. 
 Although WebP is able to capture some finer details it suffers from evident block artifacts while INR-based methods do not.*
 ***
@@ -31,16 +31,15 @@ In terms of MS-SSIM, NIF performs similarly to JPEG2000.
 
 These results clearly reduce the gap between INR-based compression and classical methods with respect to the previous baseline given by the basic version of Strumpler et al., which is reported in the plot for reference. 
 
-***
 
 {% vc_slider() %}
 {{ vc(img_id="kodak_8", kind="kodak") }}
 {% end %}
 
-*Although state-of-the-art methods, such as BPG and Xie et al. approach, achieve asmoother reconstruction, it is noticeable that they tend to remove a lot of small details, reconstructing some patches as uniform colour blocks. 
+***
+*Although state-of-the-art methods, such as BPG and Xie et al. approach, achieve a smoother reconstruction, it is noticeable that they tend to remove a lot of small details, reconstructing some patches as uniform colour blocks. 
 This is clear on the Kodak picture #8.
 In contrast, both NIF and Strumpler basic reconstruct this grainy structure, but NIF better encodes uniform patches.*
-
 ***
 
 ### *Image Compression Benchmark (ICB)*
@@ -50,7 +49,6 @@ Concerning higher bitrates (0.22bpp), the results of NIF are comparable to WebP 
 
 {{ figure(path="plots/traditional_icb.svg") }}
 
-***
 
 {% vc_slider() %}
 {{ vc(img_id="icb_deer", kind="icb") }}
@@ -60,10 +58,10 @@ Concerning higher bitrates (0.22bpp), the results of NIF are comparable to WebP 
 {{ vc(img_id="icb_flower_foveon", kind="icb") }}
 {% end %}
 
+***
 *On these crops, NIF obtains similar visual results. 
 In particular, in flower foveon, NIF reconstruction presents fewer blocking artifacts, which we believe is a strong positive factor of INR-based methods with respect to traditional ones. 
 In deer, NIF tends to reconstruct grainy noise in the background while classical codecs remove these details.*
-
 ***
 
 These promising results suggest that INR-based methods could be used as an effective tool to compress high-resolution images.
