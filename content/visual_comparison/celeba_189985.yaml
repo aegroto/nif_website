@@ -1,0 +1,22 @@
+- id: ground_truth
+  name: "Ground Truth"
+  image_name: "CelebA #189985"
+  resolution: "178x218"
+- id: nif
+  name: NIF (Ours)
+  metrics:
+    bpp: "0.65"
+    psnr: "29.36"
+    ms_ssim: "0.96"
+- id: strumpler
+  name: Strumpler
+  metrics:
+    bpp: "0.61"
+    psnr: "29.70"
+    ms_ssim: "0.96"
+- id: webp 
+  name: WebP
+  metrics:
+    bpp: "0.66"
+    psnr: "32.52"
+    ms_ssim: "0.97"

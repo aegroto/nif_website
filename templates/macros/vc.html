@@ -1,9 +1,9 @@
 {% import "macros/vc_fig.html" as vc_fig %}
 
-{% macro vc(img_id) %}
+{% macro vc(img_id, kind) %}
     {% set data = load_data(path="content/visual_comparison/" ~ img_id ~ ".yaml") %}
     
     {% for img_data in data %}
-        {{ vc_fig::vc_fig(img_id=img_id, data=img_data) }}
+        {{ vc_fig::vc_fig(img_id=img_id, kind=kind, data=img_data) }}
     {% endfor %}
 {% endmacro vc %}

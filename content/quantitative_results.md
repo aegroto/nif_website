@@ -12,6 +12,14 @@ Our proposal NIF outperforms previous works on the field in terms of PSNR on Kod
 
 It is fair to point out that Strumpler et al. approach achieves comparable or better PSNR when using meta-learned initializations on CelebA; this is not surprising since the base parameters are learned on the same CelebA dataset, which is characterized by a limited images variability, and therefore allows the network to leverage the consistent redundancies that are typically absent in real scenarios.
 
+{% vc_slider() %}
+{{ vc(img_id="celeba_189985", kind="celeba") }}
+{% end %}
+
+*In this CelebA picture, NIF reconstruction is notably less noisy than Strumpler's. 
+Although WebP is able to capture some finer details it suffers from evident block artifacts while INR-based methods do not.*
+
+
 ## Comparison to traditional approaches
 
 ### *Kodak*

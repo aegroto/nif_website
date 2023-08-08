@@ -1,19 +1,19 @@
-{% macro vc_fig(img_id, data) %}
-    <div class="vc-container">
-        <div class="vc-images">
-            <div class="vc-full">
+{% macro vc_fig(img_id, kind, data) %}
+    <div class="vc-{{kind}}-container">
+        <div class="vc-{{kind}}-images">
+            <div class="vc-{{kind}}-full">
                 <img loading="lazy" src="visual_comparisons/{{img_id}}/full/{{data['id']}}.png">
             </div>
-            <div class="vc-crop">
+            <div class="vc-{{kind}}-crop">
                 <img loading="lazy" src="visual_comparisons/{{img_id}}/crop/{{data['id']}}.png">
             </div>
         </div>
         {% if data["metrics"] %}
-            <p class="vc-caption">{{data["name"]}}, {{data["metrics"]["bpp"]}}bpp</p>
-            <p class="vc-caption">PSNR: {{data["metrics"]["psnr"]}}dB, MS-SSIM: {{data["metrics"]["ms_ssim"]}}</p>
+            <p class="vc-{{kind}}-caption">{{data["name"]}}, {{data["metrics"]["bpp"]}}bpp</p>
+            <p class="vc-{{kind}}-caption">PSNR: {{data["metrics"]["psnr"]}}dB, MS-SSIM: {{data["metrics"]["ms_ssim"]}}</p>
         {% else %}
-            <p class="vc-caption">{{data["name"]}}</p>
-            <p class="vc-caption">{{data["image_name"]}}, {{data["resolution"]}}</p>
+            <p class="vc-{{kind}}-caption">{{data["name"]}}</p>
+            <p class="vc-{{kind}}-caption">{{data["image_name"]}}, {{data["resolution"]}}</p>
         {% endif%}
     </div>
 {% endmacro vc_fig %}

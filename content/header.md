@@ -18,5 +18,5 @@ University of Catania
 [**Results**](https://tba.com/)
 
 {% vc_slider() %}
-{{ vc(img_id="kodak_1") }}
+{{ vc(img_id="kodak_1", kind="kodak") }}
 {% end %}

@@ -100,20 +100,20 @@ p {
   letter-spacing: -0.05px;
 }
 
-.vc-container {
+.vc-kodak-container {
   display: inline-block;
   width: 32%;
 }
 
-.vc-images {
+.vc-kodak-images {
   position: relative;
 }
 
-.vc-full {
+.vc-kodak-full {
   position: relative;
 }
 
-.vc-crop {
+.vc-kodak-crop {
   position: absolute;
   margin: auto;
   bottom: 0;
@@ -124,19 +124,60 @@ p {
   border-left: solid 1px white;
 }
 
-.vc-caption {
+.vc-kodak-caption {
   margin: auto;
   font-size: 80%;
 }
 
-.vc-slider {
+.vc-kodak-slider {
   margin: auto;
 }
 
-.vc-full > img, 
-.vc-crop > img 
+.vc-kodak-full > img, 
+.vc-kodak-crop > img 
 {
   margin: auto;
+  width: 100%;
+}
+
+.vc-celeba-container {
+  display: inline-block;
+  width: 24%;
+}
+
+.vc-celeba-images {
+  position: relative;
+}
+
+.vc-celeba-full {
+  position: relative;
+}
+
+.vc-celeba-crop {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 35%;
+  border-bottom: solid 1px white;
+  border-left: solid 1px white;
+}
+
+.vc-celeba-caption {
+  text-align: center;
+  margin: auto;
+  font-size: 65%;
+}
+
+.vc-celeba-slider {
+  margin: auto;
+}
+
+.vc-celeba-full > img, 
+.vc-celeba-crop > img {
+  margin: auto;
+  width: 100%
 }
 
 .citation-container {
