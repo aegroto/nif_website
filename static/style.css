@@ -58,6 +58,7 @@ body {
 
 th {
   font-weight: 400;
+  background-color: rgba(0.0, 0.0, 100, 0.025);
 }
 
 td>strong {
