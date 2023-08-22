@@ -1,5 +1,7 @@
 {% import "macros/vc.html" as vc %}
 
-{{ vc::vc(img_id=img_id, kind=kind) }}
+<div class="vc-slider vc-slider-{{kind}}">
+    {{ vc::vc(img_id=img_id, kind=kind) }}
+</div>
 
 

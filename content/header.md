@@ -17,6 +17,4 @@ University of Catania
 [**Code**](https://github.com/aegroto/nif) -
 [**Results**](https://tba.com/)
 
-{% vc_slider() %}
 {{ vc(img_id="kodak_1", kind="kodak") }}
-{% end %}

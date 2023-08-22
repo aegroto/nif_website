@@ -6,7 +6,6 @@ html, body, * {
 }
 
 body {
-  font-size: 20px;
   line-height: 150%;
 }
 
@@ -23,19 +22,19 @@ body {
 }
 
 h1 {
-  font-size: 1.8rem;
-}
-
-h2 {
-  font-size: 1.6rem;
-}
-
-h3 {
   font-size: 1.4rem;
 }
 
-h4 {
+h2 {
+  font-size: 1.3rem;
+}
+
+h3 {
   font-size: 1.2rem;
+}
+
+h4 {
+  font-size: 1.05rem;
 }
 
 /* Tables */
@@ -86,7 +85,7 @@ td > strong {
 }
 
 .content {
-  padding: 3rem;
+  padding: 1.5rem;
 }
 
 .side-half .side-figure img {
@@ -95,9 +94,10 @@ td > strong {
 }
 
 .section-content {
+  font-size: 1.1rem;
   border-radius: 8px;
-  padding: 2rem 4rem;
-  margin-bottom: 2rem;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
   background: var(--bg-light);
 }
 
@@ -132,7 +132,7 @@ td > strong {
 
 .vc-kodak-caption {
   margin: auto;
-  font-size: 80%;
+  font-size: 1rem;
 }
 
 .vc-kodak-slider {
@@ -161,14 +161,12 @@ td > strong {
   right: 0;
   z-index: 1;
   width: 35%;
-  border-bottom: solid 1px white;
-  border-left: solid 1px white;
 }
 
 .vc-celeba-caption {
   text-align: center;
   margin: auto;
-  font-size: 65%;
+  font-size: 1rem;
 }
 
 .vc-celeba-slider {
@@ -178,7 +176,12 @@ td > strong {
 .vc-celeba-full > img, 
 .vc-celeba-crop > img {
   margin: auto;
-  width: 100%
+  width: 100%;
+}
+
+.vc-celeba-crop > img {
+  border-bottom: solid 1px white;
+  border-left: solid 1px white;
 }
 
 .vc-icb-images {
@@ -196,7 +199,7 @@ td > strong {
 .vc-icb-caption {
   text-align: center;
   margin: auto;
-  font-size: 75%;
+  font-size: 0.9rem;
   overflow-wrap: break-word;
 }
 
@@ -216,7 +219,7 @@ td > strong {
 
 .citation-block {
   width: 100%;
-  font-size: 80%;
+  font-size: 1rem;
   font-weight: 200;
   border-radius: 0.3em;
   background-color: rgba(255, 255, 255, 255);
@@ -224,7 +227,7 @@ td > strong {
 }
 
 #page-header > h1 {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   color: var(--content);
 }
 
@@ -349,7 +352,8 @@ p, blockquote, pre, dl, dd, ol, ul, figure {
 
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, ul, ol, dl, figure, .highlight {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
+  margin-top: 8px;
 }
 
 a {
@@ -574,6 +578,9 @@ footer {
     margin: 0 auto;
     width: 66vw;
   }
+}
+
+@media screen and (min-width: 750px){
   table{
     font-size: 1.2rem;
   }
@@ -588,15 +595,15 @@ footer {
     flex-basis: 60%;
   }
 
-  .vc-slider {
+  .vc-slider-kodak {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .vc-slider:has(div.vc-celeba-container) {
+  .vc-slider-celeba {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .vc-slider:has(div.vc-icb-container) {
+  .vc-slider-icb {
     grid-template-columns: repeat(5, 1fr);
   }
 }
