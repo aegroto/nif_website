@@ -40,7 +40,7 @@ h4 {
 /* Tables */
 table {
   margin: 2rem auto;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   text-align: center;
   border-collapse: collapse;
 }
@@ -574,6 +574,10 @@ footer {
 }
 
 @media screen and (min-width: 1024px){
+  table {
+    font-size: 1.6rem;
+  }
+
   .content{
     margin: 0 auto;
     width: 66vw;
@@ -585,10 +589,6 @@ footer {
 }
 
 @media screen and (min-width: 750px){
-  table{
-    font-size: 1.2rem;
-  }
-
   .side-half {
     display: flex;
     gap: 2rem;
