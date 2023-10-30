@@ -16,10 +16,10 @@
         </div>
         {% if data["metrics"] %}
             <p class="vc-{{kind}}-caption">{{data["name"]}}, {{data["metrics"]["bpp"]}}bpp</p>
-            <p class="vc-{{kind}}-caption"><nobr>PSNR: {{data["metrics"]["psnr"]}}dB,</nobr> <nobr>MS-SSIM: {{data["metrics"]["ms_ssim"]}}</nobr></p>
+            <p class="vc-{{kind}}-caption"><span class="no-break">PSNR: {{data["metrics"]["psnr"]}}dB,</span> <span class="no-break">MS-SSIM: {{data["metrics"]["ms_ssim"]}}</span></p>
         {% else %}
             <p class="vc-{{kind}}-caption">{{data["name"]}}</p>
-            <p class="vc-{{kind}}-caption"><nobr>{{data["image_name"]}}</nobr>, <nobr>{{data["resolution"]}}</nobr></p>
+            <p class="vc-{{kind}}-caption"><span class="no-break">{{data["image_name"]}}</span>, <span class="no-break">{{data["resolution"]}}</span></p>
         {% endif%}
     </div>
 {% endmacro vc_fig %}
