@@ -16,6 +16,7 @@ University of Catania
 [**Paper**](https://dl.acm.org/doi/pdf/10.1145/3581783.3613834) -
 [**Code**](https://github.com/aegroto/nif) -
 [**Full results**](https://cutt.ly/nif-mm23-results) -
-[**Poster**](/poster.pdf)
+[**Poster**](/poster.pdf) -
+[**Cite**](/#citation)
 
 {{ vc(img_id="kodak_1", kind="kodak") }}

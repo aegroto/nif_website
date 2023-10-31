@@ -6,3 +6,5 @@ align = "justify"
 +++
 
 {{ citation_block() }}
+
+{{ bottom_link() }}
