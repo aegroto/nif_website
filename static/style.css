@@ -227,6 +227,10 @@ td > strong {
   resize: none;
 }
 
+.citation-spacer {
+  height: 1em;
+}
+
 .citation-title {
   display: block;
   text-align: center;
