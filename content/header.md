@@ -10,6 +10,8 @@ align = "center"
 ***
 Lorenzo Catania, Dario Allegra
 
+[lorenzo.catania@phd.unict.it](mailto://lorenzo.catania@phd.unict.it), [dario.allegra@unict.it](mailto://dario.allegra@unict.it)
+
 University of Catania
 ***
 
